@@ -16,7 +16,7 @@
 <meta property="og:description" content="Github学习笔记使用Github1. 基本概念 Repository(仓库)仓库用来存放代码，每个项目对应一个仓库，多个项目对应多个仓库。 Star(收藏)收藏项目，方便下次查看。 Fork(复制克隆项目)会复制别人的仓库到我的账户下新建个仓库，独立存在的，会标明来自于哪里。 Pull Request(发起请求)是基于fork的，fork来的别人的repository中发生变动的时候，可以pu">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-15T16:09:53.000Z">
-<meta property="article:modified_time" content="2020-02-16T17:14:54.065Z">
+<meta property="article:modified_time" content="2020-02-17T04:54:21.203Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -185,23 +185,79 @@
 <li>仓库主页<br>仓库主页显示项目信息，如：项目代码，版本，收藏/关注/fork等</li>
 <li>个人主页<br>个人信息</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 2. 创建仓库&#x2F;管理新项目  </span><br><span class="line">1. 创建仓库  </span><br><span class="line">说明：一个git库对应一个开源项目并且通过git管理git库  </span><br><span class="line">Repository name：仓库名称，一般就是项目名  </span><br><span class="line">Description：项目描述  </span><br><span class="line">Commit new file：create new file的时候需要在下方写明标题，详细描述，为了方便查看修改原因。  </span><br><span class="line">创建文件后自动跳转到仓库主页。  </span><br><span class="line">2. 修改文件&#x2F;删除文件  </span><br><span class="line">点击文件名，到文件详细界面，可以编辑和删除文件。  </span><br><span class="line">3. 上传文件  </span><br><span class="line">choose your file可以上传多个文件</span><br><span class="line">4. 搜索文件  </span><br><span class="line">快捷键T  </span><br><span class="line"></span><br><span class="line">### 3. Github Issues</span><br><span class="line">1. 作用：发现bug，但是目前没有成型的代码，需要讨论，使用开源项目出现问题时，讨论用。  </span><br><span class="line">2. 问题解决之后要 Close issue</span><br><span class="line"></span><br><span class="line"># Github学习笔记</span><br><span class="line">## 使用Git</span><br><span class="line">### 1. Git基础</span><br><span class="line">1. 目的：&#96;通过git管理github托管项目代码。&#96;</span><br><span class="line">2. [下载Git](https:&#x2F;&#x2F;git-scm.com&#x2F;downloads)·根据自己系统找到使用自己的版本下载。</span><br><span class="line">    &gt;Git官网因为某些原因😂，打开缓慢，建议有条件还是用科学上网的方式打开，可以节约点时间，手动狗头😊</span><br><span class="line">3. 安装Git</span><br><span class="line">    &gt;因为我下载到99%的时候中断了好几次，心态都快崩了，我把mac的安装包存在github上吧，太🐔无奈摇头。     </span><br><span class="line"></span><br><span class="line">    bash是命令行模式，GUI是图形模式  </span><br><span class="line">4. 相关git概念</span><br><span class="line">    - 工作区：添加、编辑、修改文件</span><br><span class="line">    - 暂存区：暂存修改的文件，最后统一提交到Git仓库中</span><br><span class="line">    - Git Repository：最终文件保存在仓库中，成为一个新的版本，并且对他人可见。</span><br><span class="line">5. 相关命令</span><br><span class="line">   - &#96;git status&#96;可以查看文件状态  </span><br><span class="line">   - &#96;git add filename&#96;将文件从工作区添加到暂存区域  </span><br><span class="line">   &gt;例如&#96;git add helloworld.c&#96;就是将文件&#96;helloworld&#96;添加到**暂存区**  </span><br><span class="line">   - &#96;git commit -m &quot;提交描述&quot;&#96;</span><br><span class="line">### 2.Git管理远端仓库</span><br><span class="line">1. 首次要配置git账户信息：</span><br><span class="line">    - 用户名</span><br></pre></td></tr></table></figure>
-<pre><code>    git config --global user.name &apos;用户名&apos;
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 邮箱</span><br></pre></td></tr></table></figure>
-    git config --global user.email &apos;邮箱地址&apos;
-    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2. 相较于本地管理多出一个&#96;git push&#96;命令，用来上传到github</span><br><span class="line">3. &#96;git clone 仓库地址&#96;来将github的仓库下载到本地。  </span><br><span class="line">4. 最后通过&#96;git push&#96;同步到github</span><br><span class="line">### 3. 相关操作步骤：</span><br><span class="line">1. 先克隆项目到本地</span><br></pre></td></tr></table></figure>
-git clone 项目地址
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2. 进入项目完成操作</span><br><span class="line">3. 将操作好的文件存到暂存区</span><br></pre></td></tr></table></figure>
-git add filename
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4. 将暂存区文件提交到仓库</span><br></pre></td></tr></table></figure>
-git commit -m &quot;描述&quot;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5. 同步到github</span><br></pre></td></tr></table></figure>
-git push
-```</code></pre><blockquote>
+<blockquote>
+<p>新用户注意要验证邮箱才可以继续使用</p>
+</blockquote>
+<h3 id="2-创建仓库-管理新项目"><a href="#2-创建仓库-管理新项目" class="headerlink" title="2. 创建仓库/管理新项目"></a>2. 创建仓库/管理新项目</h3><ol>
+<li>创建仓库<br>说明：一个git库对应一个开源项目并且通过git管理git库<br>Repository name：仓库名称，一般就是项目名<br>Description：项目描述<br>Commit new file：create new file的时候需要在下方写明标题，详细描述，为了方便查看修改原因。<br>创建文件后自动跳转到仓库主页。  </li>
+<li>修改文件/删除文件<br>点击文件名，到文件详细界面，可以编辑和删除文件。  </li>
+<li>上传文件<br>choose your file可以上传多个文件</li>
+<li>搜索文件<br>快捷键T  </li>
+</ol>
+<h3 id="3-Github-Issues"><a href="#3-Github-Issues" class="headerlink" title="3. Github Issues"></a>3. Github Issues</h3><ol>
+<li>作用：发现bug，但是目前没有成型的代码，需要讨论，使用开源项目出现问题时，讨论用。  </li>
+<li>问题解决之后要 Close issue</li>
+</ol>
+<h1 id="Github学习笔记-1"><a href="#Github学习笔记-1" class="headerlink" title="Github学习笔记"></a>Github学习笔记</h1><h2 id="使用Git"><a href="#使用Git" class="headerlink" title="使用Git"></a>使用Git</h2><h3 id="1-Git基础"><a href="#1-Git基础" class="headerlink" title="1. Git基础"></a>1. Git基础</h3><ol>
+<li><p>目的：<code>通过git管理github托管项目代码。</code></p>
+</li>
+<li><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载Git</a>·根据自己系统找到使用自己的版本下载。</p>
+<blockquote>
+<p>Git官网因为某些原因😂，打开缓慢，建议有条件还是用科学上网的方式打开，可以节约点时间，手动狗头😊</p>
+</blockquote>
+</li>
+<li><p>安装Git</p>
+<blockquote>
+<p>因为我下载到99%的时候中断了好几次，心态都快崩了，我把mac的安装包存在github上吧，太🐔无奈摇头。     </p>
+</blockquote>
+<p> bash是命令行模式，GUI是图形模式  </p>
+</li>
+<li><p>相关git概念</p>
+<ul>
+<li>工作区：添加、编辑、修改文件</li>
+<li>暂存区：暂存修改的文件，最后统一提交到Git仓库中</li>
+<li>Git Repository：最终文件保存在仓库中，成为一个新的版本，并且对他人可见。</li>
+</ul>
+</li>
+<li><p>相关命令</p>
+<ul>
+<li><code>git status</code>可以查看文件状态  </li>
+<li><code>git add filename</code>将文件从工作区添加到暂存区域  <blockquote>
+<p>例如<code>git add helloworld.c</code>就是将文件<code>helloworld</code>添加到<strong>暂存区</strong>  </p>
+</blockquote>
+</li>
+<li><code>git commit -m &quot;提交描述&quot;</code><h3 id="2-Git管理远端仓库"><a href="#2-Git管理远端仓库" class="headerlink" title="2.Git管理远端仓库"></a>2.Git管理远端仓库</h3></li>
+</ul>
+</li>
+<li><p>首次要配置git账户信息：</p>
+<ul>
+<li>用户名  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &#39;用户名&#39;</span><br></pre></td></tr></table></figure></li>
+<li>邮箱  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &#39;邮箱地址&#39;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>相较于本地管理多出一个<code>git push</code>命令，用来上传到github</p>
+</li>
+<li><p><code>git clone 仓库地址</code>来将github的仓库下载到本地。  </p>
+</li>
+<li><p>最后通过<code>git push</code>同步到github</p>
+<h3 id="3-相关操作步骤："><a href="#3-相关操作步骤：" class="headerlink" title="3. 相关操作步骤："></a>3. 相关操作步骤：</h3></li>
+<li><p>先克隆项目到本地</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 项目地址</span><br></pre></td></tr></table></figure></li>
+<li><p>进入项目完成操作</p>
+</li>
+<li><p>将操作好的文件存到暂存区</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add filename</span><br></pre></td></tr></table></figure></li>
+<li><p>将暂存区文件提交到仓库</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;描述&quot;</span><br></pre></td></tr></table></figure></li>
+<li><p>同步到github</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+<blockquote>
 <p>可能会出现权限问题。   </p>
 </blockquote>
+</li>
+</ol>
 <p>可以通过修改config信息<br>通过命令<br><code>vim .git/config</code>修改<code>[remote &quot;origin&quot;]</code>下的<code>url = https://github.com/用户名/仓库</code>为<code>url = https://用户名:密码@github.com/用户名/仓库</code></p>
-<h1 id="Github学习笔记-1"><a href="#Github学习笔记-1" class="headerlink" title="Github学习笔记"></a>Github学习笔记</h1><h2 id="Github-Pages搭建网站"><a href="#Github-Pages搭建网站" class="headerlink" title="Github Pages搭建网站"></a>Github Pages搭建网站</h2><h3 id="个人站点"><a href="#个人站点" class="headerlink" title="个人站点"></a>个人站点</h3><p>访问：<code>https://用户名.github.io</code></p>
+<h1 id="Github学习笔记-2"><a href="#Github学习笔记-2" class="headerlink" title="Github学习笔记"></a>Github学习笔记</h1><h2 id="Github-Pages搭建网站"><a href="#Github-Pages搭建网站" class="headerlink" title="Github Pages搭建网站"></a>Github Pages搭建网站</h2><h3 id="个人站点"><a href="#个人站点" class="headerlink" title="个人站点"></a>个人站点</h3><p>访问：<code>https://用户名.github.io</code></p>
 <h4 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h4><ol>
 <li>创建个人站点 -&gt; 新建仓库(注：仓库名必须是【用户名.github.io】)</li>
 <li>在仓库下新建<code>.html</code>文件作为主页即可<blockquote>
