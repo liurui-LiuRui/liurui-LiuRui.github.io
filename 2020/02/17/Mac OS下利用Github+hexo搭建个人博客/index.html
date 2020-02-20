@@ -16,7 +16,7 @@
 <meta property="og:description" content="写博客，表面上看是一个搬运的过程，但实际上是一个总结的过程、一个思考的过程。下面我来介绍下利用Github+hexo搭建个人博客的方法。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-16T16:09:53.000Z">
-<meta property="article:modified_time" content="2020-02-20T08:17:43.441Z">
+<meta property="article:modified_time" content="2020-02-20T13:27:51.651Z">
 <meta property="article:author" content="Ray Liu">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -277,20 +277,48 @@
 <li><p>为自己的域名实名认证。</p>
 </li>
 <li><p>认证完成之后为域名添加解析</p>
-</li>
-<li><p>要确定自己博客的ip地址，在终端输入如下指令</p>
-</li>
-<li><pre><code class="shell">ping 用户名.github.io
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3. 得到的ip地址输入到解析的记录值里。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   | 主机记录 | 记录类型 | 记录值           |</span><br><span class="line">   | -------- | -------- | ---------------- |</span><br><span class="line">   | @        | A        | ping出来的ip值   |</span><br><span class="line">   | www      | CNAME    | 用户名.github.io |</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">7. 到本地的blog目录的source文件夹下，新建一个CNAME的文件，**注意没有后缀**，文件内容为你购买的域名。</span><br></pre></td></tr></table></figure>
-vim CNAME
-购买的域名
-:wq //保存退出
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">8. 用指令重新推一下就好了，可能会有延迟需要等一会儿。</span><br><span class="line"></span><br><span class="line">   &#96;&#96;&#96;shell</span><br><span class="line">   hexo clean</span><br><span class="line">   hexo g</span><br><span class="line">   hexo d</span><br></pre></td></tr></table></figure>
-
-
-</code></pre>
+<ol>
+<li>要确定自己博客的ip地址，在终端输入如下指令</li>
+</ol>
 </li>
 </ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping 用户名.github.io</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>得到的ip地址输入到解析的记录值里。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>主机记录</th>
+<th>记录类型</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>@</td>
+<td>A</td>
+<td>ping出来的ip值</td>
+</tr>
+<tr>
+<td>www</td>
+<td>CNAME</td>
+<td>用户名.github.io</td>
+</tr>
+</tbody></table>
+<ol start="7">
+<li>到本地的blog目录的source文件夹下，新建一个CNAME的文件，<strong>注意没有后缀</strong>，文件内容为你购买的域名。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim CNAME</span><br><span class="line">购买的域名</span><br><span class="line">:wq &#x2F;&#x2F;保存退出</span><br></pre></td></tr></table></figure>
+
+
+<ol start="8">
+<li>用指令重新推一下就好了，可能会有延迟需要等一会儿。</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
 
       
 
