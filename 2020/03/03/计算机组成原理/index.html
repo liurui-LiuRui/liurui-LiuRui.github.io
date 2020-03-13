@@ -16,7 +16,7 @@
 <meta property="og:description" content="计算机组成原理是计算机专业的核心课程也是基础课程，每个学习计算机的人都会学习该课程。计算机考研不管是自主命题还是国家统一命题，都会涉及到计算机组成原理的题目。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-03T04:00:00.000Z">
-<meta property="article:modified_time" content="2020-03-08T14:26:11.748Z">
+<meta property="article:modified_time" content="2020-03-13T16:00:58.444Z">
 <meta property="article:author" content="Ray Liu">
 <meta property="article:tag" content="计算机组成原理">
 <meta name="twitter:card" content="summary">
@@ -448,7 +448,50 @@
 </ol>
 </li>
 </ol>
-
+<h1 id="第三章-系统总线"><a href="#第三章-系统总线" class="headerlink" title="第三章-系统总线"></a>第三章-系统总线</h1><h2 id="3-1总线的基本概念"><a href="#3-1总线的基本概念" class="headerlink" title="3.1总线的基本概念"></a>3.1总线的基本概念</h2><ol>
+<li>为什么用总线</li>
+<li>什么是总线<ol>
+<li>总线是连接各个部件的信息传输线，是各个部件共享的传输介质。</li>
+</ol>
+</li>
+<li>总线上信息的传送<ol>
+<li>串行</li>
+<li>并行</li>
+</ol>
+</li>
+<li>I/O设备要通过I/O接口接入总线</li>
+</ol>
+<h2 id="3-2总线的分类"><a href="#3-2总线的分类" class="headerlink" title="3.2总线的分类"></a>3.2总线的分类</h2><ol>
+<li>片内总线：<strong>芯片内部</strong>的总线</li>
+<li>系统总线：<strong>计算机各部件之间</strong>的信息传输线<ol>
+<li>数据总线：<strong>双向</strong>与机器字长存储字长有关</li>
+<li>地址总线：<strong>单向</strong>与储存地址、I/O地址有关</li>
+<li>控制总线：<strong>有出</strong>、<strong>有入</strong></li>
+</ol>
+</li>
+<li>通信总线：用于计算机系统之间或者计算机系统与其他系统</li>
+</ol>
+<h2 id="3-3总线特性及性能指标"><a href="#3-3总线特性及性能指标" class="headerlink" title="3.3总线特性及性能指标"></a>3.3总线特性及性能指标</h2><ol>
+<li>总线物理实现</li>
+<li>总线的特性<ol>
+<li>机械特性：<strong>尺寸</strong>、形状、<strong>管脚数</strong>、<strong>排列顺序</strong></li>
+<li>电气特性：<strong>传输方向</strong>和有效的<strong>电平</strong>范围</li>
+<li>功能特性：每根传输线的功能：地址、数据、控制</li>
+<li>时间特性：信号的<strong>时序</strong>关系</li>
+</ol>
+</li>
+<li>总线的性能指标<ol>
+<li>总线宽度：<strong>数据线</strong>的根数</li>
+<li>标准传输率：每秒传输的最大字节数（MBps）</li>
+<li>时钟同步/异步：同步、不同步</li>
+<li>总线复用：<strong>地址线</strong>与<strong>数据线</strong>复用</li>
+<li>信号线数：地址线、数据线和控制线的<strong>总和</strong></li>
+<li>总线控制方式：突发、自动、仲裁、逻辑、技术</li>
+<li>其他指标：负载能力</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-4总线结构"><a href="#3-4总线结构" class="headerlink" title="3.4总线结构"></a>3.4总线结构</h2><h2 id="3-5总线控制"><a href="#3-5总线控制" class="headerlink" title="3.5总线控制"></a>3.5总线控制</h2>
       
 
       
@@ -590,7 +633,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-计算机系统概论"><span class="toc-number">1.</span> <span class="toc-text">第一章-计算机系统概论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#考纲内容"><span class="toc-number">1.1.</span> <span class="toc-text">考纲内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1计算机系统简介"><span class="toc-number">1.2.</span> <span class="toc-text">1.1计算机系统简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2计算机的基本组成"><span class="toc-number">1.3.</span> <span class="toc-text">1.2计算机的基本组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3计算机硬件的主要技术指标"><span class="toc-number">1.4.</span> <span class="toc-text">1.3计算机硬件的主要技术指标</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-计算机的发展及应用"><span class="toc-number">2.</span> <span class="toc-text">第二章-计算机的发展及应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#考纲内容-1"><span class="toc-number">2.1.</span> <span class="toc-text">考纲内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1计算机的发展历史"><span class="toc-number">2.2.</span> <span class="toc-text">2.1计算机的发展历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2计算机的应用"><span class="toc-number">2.3.</span> <span class="toc-text">2.2计算机的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3计算机的展望"><span class="toc-number">2.4.</span> <span class="toc-text">2.3计算机的展望</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-计算机系统概论"><span class="toc-number">1.</span> <span class="toc-text">第一章-计算机系统概论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#考纲内容"><span class="toc-number">1.1.</span> <span class="toc-text">考纲内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1计算机系统简介"><span class="toc-number">1.2.</span> <span class="toc-text">1.1计算机系统简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2计算机的基本组成"><span class="toc-number">1.3.</span> <span class="toc-text">1.2计算机的基本组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3计算机硬件的主要技术指标"><span class="toc-number">1.4.</span> <span class="toc-text">1.3计算机硬件的主要技术指标</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-计算机的发展及应用"><span class="toc-number">2.</span> <span class="toc-text">第二章-计算机的发展及应用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#考纲内容-1"><span class="toc-number">2.1.</span> <span class="toc-text">考纲内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1计算机的发展历史"><span class="toc-number">2.2.</span> <span class="toc-text">2.1计算机的发展历史</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2计算机的应用"><span class="toc-number">2.3.</span> <span class="toc-text">2.2计算机的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3计算机的展望"><span class="toc-number">2.4.</span> <span class="toc-text">2.3计算机的展望</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章-系统总线"><span class="toc-number">3.</span> <span class="toc-text">第三章-系统总线</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1总线的基本概念"><span class="toc-number">3.1.</span> <span class="toc-text">3.1总线的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2总线的分类"><span class="toc-number">3.2.</span> <span class="toc-text">3.2总线的分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3总线特性及性能指标"><span class="toc-number">3.3.</span> <span class="toc-text">3.3总线特性及性能指标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4总线结构"><span class="toc-number">3.4.</span> <span class="toc-text">3.4总线结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5总线控制"><span class="toc-number">3.5.</span> <span class="toc-text">3.5总线控制</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
