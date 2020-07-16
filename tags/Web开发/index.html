@@ -6,19 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Linux入门 | Strive|LiuRui的Blog</title>
+  <title>Tag: Web开发 | Strive|LiuRui的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="掌握Linux相关知识，对程序员来说是十分重要的。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux入门">
-<meta property="og:url" content="http://yoursite.com/2020/02/16/Linux%E5%85%A5%E9%97%A8/index.html">
+  <meta name="description" content="刘瑞的博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Strive|LiuRui的Blog">
+<meta property="og:url" content="http://yoursite.com/tags/Web%E5%BC%80%E5%8F%91/index.html">
 <meta property="og:site_name" content="Strive|LiuRui的Blog">
-<meta property="og:description" content="掌握Linux相关知识，对程序员来说是十分重要的。">
+<meta property="og:description" content="刘瑞的博客">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-16T11:52:54.000Z">
-<meta property="article:modified_time" content="2020-02-17T12:13:51.449Z">
 <meta property="article:author" content="Ray Liu">
-<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Strive|LiuRui的Blog" type="application/atom+xml">
@@ -167,459 +164,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Linux入门" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Linux入门
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/06/25/web%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2020-06-25T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-25</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/06/25/web%E9%97%A8%E6%88%B7%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/">Web门户网站搭建</a>
     </h1>
   
 
-        
-        <a href="/2020/02/16/Linux%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-02-16T11:52:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>掌握Linux相关知识，对程序员来说是十分重要的。</p>
-<a id="more"></a>
-
-<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ul>
-<li>系统调用是操作系统内核与用户程序、应用程序之间的<code>接口</code>。</li>
-<li>GCC：<code>C语言</code>编译器</li>
-<li>Bash：<code>linux</code>中常用的一种<code>shell</code></li>
-<li>Linux系统的桌面市场不成熟</li>
-<li>Linux的系统特点<ul>
-<li>与UNIX兼容</li>
-<li>自由软件，源码公开</li>
-<li>性能高，安全性强</li>
-<li>便于定制和再开发</li>
-<li>互操作性高</li>
-<li>全面的多任务和真正的32/64位操作系统</li>
-<li>在服务器市场及嵌入式系统领域应用广泛，是一种高性能、低开支的可以替换其他昂贵操作系统的系统</li>
-</ul>
-</li>
-<li>Linux系统分区<ul>
-<li>传统的IDE硬盘被称为hda，hdb，SATA串口、SCSI并口 被称为sda，sdb</li>
-</ul>
-</li>
-<li>Linux系统分区<ul>
-<li>主分区</li>
-<li>扩展分区</li>
-<li>逻辑分区</li>
-</ul>
-</li>
-<li>MBR分区表<ul>
-<li>最多四个主分区 或者 最多三个主分区及一个拓展分区，拓展分区上多个逻辑分区</li>
-</ul>
-</li>
-<li>/dev/sda5意思 dev硬件设备文件所在目录 sd表示并口 a硬盘顺序号 数字5是分区顺序号<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3></li>
-<li>各目录用途<ul>
-<li><code>/bin</code>：这个目录存放着普通用户经常使用的命令文件。</li>
-<li><code>/sbin</code>：s是Super User的意思。这里存放的是系统管理员使用的系统管理程序。系统管理员常用的二进制命令文件。</li>
-<li><code>/boot</code>：这里存放的是启动Linux时使用的一些核心文件，包括内核、一些链接文件以及镜像文件。</li>
-<li><code>/dev</code>：dev是Device的缩写。该目录下存放的是设备文件，在Linux中访问外部设备的方式和访问文件的方式是相同的。</li>
-<li><code>/etc</code>：存放配置文件和子目录</li>
-<li><code>/mut</code>：为了让用户临时挂载别的文件系统，光驱挂载在 /mnt/cdrom</li>
-<li><code>/root</code>：该目录为系统管理员（即超级用户root）的用户主目录</li>
-<li><code>/home</code>：存放普通用户的主目录，以账号命名，如：/home/liurui</li>
-</ul>
-</li>
-<li>用户标示<ul>
-<li>#：管理员用户</li>
-<li>$：普通用户</li>
-</ul>
-</li>
-<li>关机<ul>
-<li><pre><code>halt -p
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*</span><br></pre></td></tr></table></figure>
-shutdown -h&lt;time&gt;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*</span><br></pre></td></tr></table></figure>
-poweroff
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 重启</span><br><span class="line">    *</span><br></pre></td></tr></table></figure>
-reboot
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*</span><br></pre></td></tr></table></figure>
-shutdown -r&lt;time&gt;</code></pre><h3 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h3></li>
-</ul>
-</li>
-<li><code>man</code>：联机帮助手册    man 命令名称</li>
-<li><code>help</code>：查看shell内部命令帮助信息</li>
-<li><code>who</code>：显示当前已注册到系统的所有用户名</li>
-<li><code>whoami</code>：显示当前有效的用户名称</li>
-<li><code>-N</code>：仅显示最近期的n行输出，其中n为正整数</li>
-<li><code>uname</code>：显示计算机的基本信息</li>
-<li><code>hostname</code>：显示计算机的名称。          显示主机信息类查询命令：uname、hostname</li>
-<li><code>echo</code>：将命令行中的参数显示到标准输出（屏幕）上</li>
-<li><code>date</code>：在屏幕上显示或者设置系统的日期和时间</li>
-<li><code>cal</code>：用来显示日历</li>
-<li>基础命令 成为超级用户<ul>
-<li>管理员切换到普通用户：不需要密码</li>
-<li>反之则需要密码<ul>
-<li><code>su -切换目录</code>，切换到用户的跟目录</li>
-<li>su stu：不切换目录</li>
-<li><code>exit</code>：切换回原先的用户</li>
-<li>切换到root账号： <code>su root</code><h3 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h3></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>ls-l</code>：以列表方式显示文件的详细信息<ul>
-<li>开头有10个字符构成的字符串，其中第一个字符表示文件类型：<ul>
-<li>-普通文件</li>
-<li>d目录</li>
-<li>l符号链接</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>ls-a</code>：显示指定目录下所有子目录与文件，包括隐藏文件（.开头的文件）</li>
-<li><code>ls-h</code>：显示文件大小</li>
-<li><code>ls-lh</code>(需要分析）</li>
-<li>目录与文件的基本操作命令-ln<ul>
-<li>给系统中已有的某个文件或目录指定另一个可用于访问他的名称</li>
-<li>硬连接</li>
-<li>符号链接</li>
-</ul>
-</li>
-<li>默认情况下，ln产生硬连接。如果给ln命令加上-s选项，则建立符号链接。</li>
-<li>文件的硬连接数为1，文件夹则看有几种形式访问到该文件夹，则硬连接数就为几</li>
-<li>硬连接和软链接的区别</li>
-<li>软连击与硬连接不同<ul>
-<li>软链接有自己的文件属性及权限等</li>
-<li>可对不存在的文件或目录创建软连接</li>
-<li>软连接可对文件或目录创建</li>
-<li>创建软连接时，链接计数 i_nlink 不会增加</li>
-<li>删除软连接并不影响被指的文件<ul>
-<li>但若被指向的原文件被删除，则相关软连接被称为死链接，若被指向路径文件被重新建立，死链接可恢复正常的软连接。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>软连接演示</li>
-<li>Linux中文件名与文件数据是分开储存的，软连接中存放的是文件的路径，文件名是人命中的大名，硬连接则是小名。</li>
-<li>复习：<code>-rwxr--r--  2  linux linux 5699  12月  28  11:36   abc</code><ul>
-<li>该文件的名称是什么？它是什么类型的文件？想给同组用户添加对该文件的可写可执行权限，应使用什么命令？（3）想把该文件链接到目录/home/stu下的tmp文件，应如何操作？</li>
-<li>abc  、chmod g+wx abc、 ln -s  /tmp/abc/home/stu/tmp</li>
-</ul>
-</li>
-<li>权限设置<ul>
-<li>访问权限<ul>
-<li>只读（r）只写（w）可执行（x）</li>
-</ul>
-</li>
-<li>文件的用户<ul>
-<li>文件所有者，同组用户，其他用户</li>
-</ul>
-</li>
-<li>每一个文件或目录的访问权限有三组，每组用三位表示：文件属主的读、写和执行权限；与属主同组用户的读、写和执行权限；系统中其他用户的读、写和执行权限</li>
-</ul>
-</li>
-<li><code>chmod</code> 改权限<ul>
-<li>两种方法<ul>
-<li>文字设定法<ul>
-<li><code>chmod [who][+/-/=] [mode] 文件名</code></li>
-</ul>
-</li>
-<li>数字设定法<ul>
-<li><code>#chmod 746 file.text</code>    的意思<ul>
-<li>设定file.text文件的属性为：U为可读可写可执行，g为可读，o为可读可写</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>chgrp</code>命令：更改文件或目录所属的组<ul>
-<li>chgrp [选项] group filename</li>
-<li>$ chgrp - R book /opt/local /book<ul>
-<li>改变/opt/local 、/book/及其子目录下所有的文件的属组为book</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>chown</code>：改变某个文件的属组或属主 （需要root权限）<pre><code>* chown [选项] 用户或者组 文件
-    * $ chown wang shiyan.c wang是属主
-    * $ chown -R wang.users /his（把目录/his及其下的所有文件和子目录的属主改成wang，属组改成users</code></pre></li>
-<li>目录的概念与定义<ul>
-<li><code>cd /</code>命令回到根目录</li>
-<li>相对路径</li>
-<li>绝对路径 以 ’/’ 开头</li>
-<li><code>cd ～</code> 快速回到home目录</li>
-<li><code>pwd</code>查询当前工作目录</li>
-<li><code>mkdir</code>创建文件夹<ul>
-<li><code>-p</code>用于创建多级目录<h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>文件概念与定义<ul>
-<li>普通文件：<ul>
-<li>文本文件：普通的文本文件</li>
-<li>二进制文件：计算机识别的0/1这种，可执行文件、链接库文件、共享库文件</li>
-</ul>
-</li>
-<li>目录文件：Linux把一切看作文件，目录叫做目录文件。</li>
-<li>设备文件：都放在dev文件夹下<ul>
-<li>网络设备文件</li>
-<li>块文件</li>
-<li>字符设备文件</li>
-</ul>
-</li>
-<li>符号链接文件：软连接和硬连接<ul>
-<li>符号连接文件就是软连接，相当于windows的快捷方式</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>文件类型<ul>
-<li>常规文件、目录文件、链接文件、字符设备文件、块设备文件、管道文件、套接字文件</li>
-</ul>
-</li>
-<li><code>cat</code>命令：在标准输出上显示文件<ul>
-<li>显示文件</li>
-<li>链接两个多个文件<ul>
-<li>把文件file1和文件file2的内容合并起来，放入file3中</li>
-<li>cat file1 file2 &gt; file3</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>tail</code>命令：查看文件最后几行，默认是最后10行</li>
-<li><code>head</code>命令：查看文件前几行，默认是前10行</li>
-<li><code>file</code>：查看文件类型<ul>
-<li>语法：file 文件名</li>
-</ul>
-</li>
-<li><code>Wc</code>命令：用来统计指定文件的字节数、字数、行数、并将统计结果显示出来</li>
-<li><code>touch</code>：生成一个空文件或修改文件的存取/修改的时间记录值</li>
-<li><code>grep</code>命令：在文本文件中查找指定模式的词或短语，并在标准输出上显示包括给定字符串模式的所有行</li>
-<li>重定向：&gt;<ul>
-<li>如：ls&gt;ls.text将查找出来的放入ls.text文本中</li>
-</ul>
-</li>
-<li>管道：</li>
-<li><code>find</code>命令：用来在一个或多个目录及其递归子目录中搜索符合特定条件的文件</li>
-<li>文件的压缩打包的方式：gzip<h3 id="VIM的简单用法"><a href="#VIM的简单用法" class="headerlink" title="VIM的简单用法"></a>VIM的简单用法</h3></li>
-<li>编辑器的工作模式<ul>
-<li>命令模式</li>
-<li>插入模式 按下i的那个</li>
-<li>末行模式 有：的</li>
-</ul>
-</li>
-<li>文本插入命令<ul>
-<li>新增：<code>a</code>为从光标所在位置后面新增，<code>A</code>为从光标所在行最后面新增</li>
-<li>开始：<code>o</code>为从光标所在行下新增，<code>O</code>为从光标所在行上新增</li>
-</ul>
-</li>
-<li>文本的复制和移动<ul>
-<li><code>yy</code>复制当前行到内存缓冲区</li>
-<li><code>nyy</code>复制n行内容到内存缓冲区</li>
-<li><code>p</code>将缓冲区内容粘贴在光标后</li>
-<li><code>P</code>将缓冲区内容粘贴在光标前</li>
-</ul>
-</li>
-<li>文件的保存和退出<ul>
-<li><code>:w</code>：保存</li>
-<li><code>:q</code>：退出</li>
-<li><code>:w!</code>：强制保存</li>
-<li><code>:q!</code>：强制退出</li>
-<li><code>:wq</code>：保存退出</li>
-<li><code>:wq!</code>：强制保存退出<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3></li>
-</ul>
-</li>
-<li>top命令：系统监控命令，能显示实时的进程列表，而且还能实时监视系统资源，包括内存、交换分区和cpu的使用率等</li>
-<li>删除进程命令 kill</li>
-<li>shell的概念 既是命令解释程序又是高级程序设计语言</li>
-<li>shell是解释型语言，不需要重新编译</li>
-<li>shell是用户和系统内核之间的接口程序</li>
-<li>shell是命令解释器，解释用户命令和shell程序的文字终端</li>
-<li>#！/bin/bash 两分</li>
-<li>一般步骤<ul>
-<li>编辑文件</li>
-<li>保存文件</li>
-<li>将文件赋予可以执行的权限</li>
-<li>运行及排错</li>
-</ul>
-</li>
-<li>declare -i 变量名：声明变量为数值型变量</li>
-<li>declare -r ：声明只读变量</li>
-<li>If语句例子<ul>
-<li>基本格式：</li>
-<li>if特殊例子</li>
-</ul>
-</li>
-<li>For循环例子 </li>
-</ul>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Web开发</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/16/Linux%E5%85%A5%E9%97%A8/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/02/17/Mac%20OS%E4%B8%8B%E5%88%A9%E7%94%A8Github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MacOS下利用Github+hexo搭建个人博客
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/02/16/Github%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Github使用指南</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础知识"><span class="toc-number">1.</span> <span class="toc-text">基础知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录"><span class="toc-number">2.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#相关命令"><span class="toc-number">3.</span> <span class="toc-text">相关命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录操作"><span class="toc-number">4.</span> <span class="toc-text">目录操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件"><span class="toc-number">5.</span> <span class="toc-text">文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VIM的简单用法"><span class="toc-number">6.</span> <span class="toc-text">VIM的简单用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他"><span class="toc-number">7.</span> <span class="toc-text">其他</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -643,9 +241,9 @@ shutdown -r&lt;time&gt;</code></pre><h3 id="相关命令"><a href="#相关命令
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
