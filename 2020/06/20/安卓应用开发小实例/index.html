@@ -6,17 +6,31 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/3 | Strive|LiuRui的Blog</title>
+  <title>Android应用开发小实例 | Strive|LiuRui的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="刘瑞的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Strive|LiuRui的Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="本文基于Android Studio软件实现我同意游戏条款的小程序。 语言：Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android应用开发小实例">
+<meta property="og:url" content="http://yoursite.com/2020/06/20/%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B0%8F%E5%AE%9E%E4%BE%8B/index.html">
 <meta property="og:site_name" content="Strive|LiuRui的Blog">
-<meta property="og:description" content="刘瑞的博客">
+<meta property="og:description" content="本文基于Android Studio软件实现我同意游戏条款的小程序。 语言：Java">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/HBQpZSC9wFjf1aR.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/GOo8Izpjw3eKDsi.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/EjUih3YQPLTHFG7.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/AVWrkmK9chsqiM6.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/LvHjPnN1mWpTizg.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/tzF3G2YLbSZiKfM.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/CB5PQcFDlYd9IzO.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/PkZmVOSgiH2J5pF.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/TQtPMVmYxqUIgR6.png">
+<meta property="og:image" content="https://i.loli.net/2020/07/16/yaNUDOYLTtI1sSP.png">
+<meta property="article:published_time" content="2020-06-20T11:00:00.000Z">
+<meta property="article:modified_time" content="2020-07-16T10:10:03.916Z">
 <meta property="article:author" content="Ray Liu">
+<meta property="article:tag" content="Android开发">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/07/16/HBQpZSC9wFjf1aR.png">
   
     <link rel="alternative" href="/atom.xml" title="Strive|LiuRui的Blog" type="application/atom+xml">
   
@@ -164,174 +178,299 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-安卓应用开发小实例" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android应用开发小实例
+    </h1>
+  
+
+        
+        <a href="/2020/06/20/%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B0%8F%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
+  	<time datetime="2020-06-20T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-20</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文基于Android Studio软件实现我同意游戏条款的小程序。</p>
+<p>语言：Java</p>
+<a id="more"></a>
+
+<p>[TOC]</p>
+<h1 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h1><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>android 开发是指 android 平台上应用的制作，Android 早期由“Android 之父” 之称的 Andy Rubin 创办，Google 于 2005 年并购了成立仅 22 个月的高科技企业 Android，展开了短信、手机检索、定位等业务，基于 Linux 的通用平台进入了 开发。</p>
+<h2 id="1-1研究背景与意义"><a href="#1-1研究背景与意义" class="headerlink" title="1.1研究背景与意义"></a>1.1研究背景与意义</h2><h3 id="1-1-1-研究背景"><a href="#1-1-1-研究背景" class="headerlink" title="1.1.1 研究背景"></a>1.1.1 研究背景</h3><p>​    Android 是一种基于 Linux 的自由及开放源代码的操作系统，Android 分为 四个层，从高层到低层分别是应用程 序层、应用程序框架层、系统运行库层和 Linux 内核层。</p>
+<p>​    谷歌公司推出了开源的 Android 系统，现在应用非常广泛，开发环境不会受 到各种条条框框的限制，开发者任意修改开放的源代码来实现与开发各种实用的 手机 App 软件，具有高级图形显示、界面友好等特点。</p>
+<p>​    Android 是 Google 开发的基于 Linux 平台的开源手机操作系统。它包括操 作系统、用户界面和应用程序—— 移动电话工作所需的全部软件，而且不存在 任何以往阻碍移动产业创新的专有权障碍。谷歌与开放手机联盟合作开发了 Android，这个联盟由包括中国移动、摩托罗拉、高通、宏达和 T-Mobile 在内的 30 多家技术和无线应用的领军企业组成。通过与运营商、设备制造商、开发商 和其他有关各方结成深层次的合作伙伴关系，我们希望借助建立标准化、开放式 的移动电话软件平台，在移动产业内形成一个开放式的生态系统。我们认为此举 必将推进更好、更快的创新，为移动用户提供不可预知的应用和服务。</p>
+<h3 id="1-1-2-研究意义"><a href="#1-1-2-研究意义" class="headerlink" title="1.1.2 研究意义"></a>1.1.2 研究意义</h3><p>​    在手机变得十分重要的今天，并且 IOS 操作系统和 Android 操作系统如日中天的年代，掌握移动应用开发是十分重要的。</p>
+<h2 id="1-2-本文组织结构"><a href="#1-2-本文组织结构" class="headerlink" title="1.2 本文组织结构"></a>1.2 本文组织结构</h2><p>本文共分为五个大章，具体内容如下:<br> 第一章 绪论:阐述安卓开发的现状。<br> 第二章 系统软硬件环境设计:对项目的实现针对项目的硬件环境与软件环境进行可行性研究分析。<br> 第三章 项目需求分析:主要是对功能需求进行分析。<br> 第四章 本项目设计与实现<br> 第五章 运行显示:对项目进行展示。</p>
+<h1 id="第二章-系统软硬件环境设计"><a href="#第二章-系统软硬件环境设计" class="headerlink" title="第二章 系统软硬件环境设计"></a>第二章 系统软硬件环境设计</h1><h2 id="2-1-可行性分析"><a href="#2-1-可行性分析" class="headerlink" title="2.1 可行性分析"></a>2.1 可行性分析</h2><p>在实际中进行任何一个项目前，首先要进行可行性分析。因为要首先预估预</p>
+<p>计可能出现的问题并且推算出实际完成所花费的时间，找到真正行之有效的解决 问题的方法。如若不进行项目的可行性分析就可能会造成巨大的资源浪费，人力、 时间、经费，所以说，进行可行性分析是非常有必要的。</p>
+<p>就目前来说，各种各样、形形色色的安卓软件层出不穷，一款优秀的安卓软 件，是对开发者，运营者的充分肯定。</p>
+<p>在硬件方面:因为是小项目，对硬件没有那么大的要求，硬件方面是可行的。</p>
+<p>在软件方面，由于 Android Studio 这个非常成熟的开发工具，无论在安全性、 可用性、可靠性方面都毫无置疑，因此软件方面是可行的。</p>
+<p>经过以上的分析，是可行的。</p>
+<h2 id="2-2-项目开发硬件环境"><a href="#2-2-项目开发硬件环境" class="headerlink" title="2.2 项目开发硬件环境"></a>2.2 项目开发硬件环境</h2><p>开发环境:Mac 操作系统下的 Android Studio。<br>运行环境:Android Studio 和虚拟机 Pixel 2 API 29<br>调试工具:虚拟机 Pixel 2 API 29</p>
+<h2 id="2-3-项目开发软件环境"><a href="#2-3-项目开发软件环境" class="headerlink" title="2.3 项目开发软件环境"></a>2.3 项目开发软件环境</h2><h3 id="2-3-1-Android-Studio"><a href="#2-3-1-Android-Studio" class="headerlink" title="2.3.1 Android Studio"></a>2.3.1 Android Studio</h3><p>Android Studio 是谷歌推出的一个 Android 集成开发工具，基于 IntelliJ IDEA. 类似 Eclipse ADT，Android Studio 提供了集成的 Android 开发工具用于开发和调试。</p>
+<h1 id="第三章-软件项目需求分析"><a href="#第三章-软件项目需求分析" class="headerlink" title="第三章 软件项目需求分析"></a>第三章 软件项目需求分析</h1><h2 id="3-1-功能需求"><a href="#3-1-功能需求" class="headerlink" title="3.1 功能需求"></a>3.1 功能需求</h2><p>项目(实现我同意进入游戏检测):在游戏软件中，同意游戏条款是必须的，</p>
+<p>因此开发此功能，在勾选我同意的选项后才可以进入游戏。</p>
+<h1 id="第四章-功能设计与实现"><a href="#第四章-功能设计与实现" class="headerlink" title="第四章 功能设计与实现"></a>第四章 功能设计与实现</h1><h2 id="4-1-功能详细介绍及其实现"><a href="#4-1-功能详细介绍及其实现" class="headerlink" title="4.1 功能详细介绍及其实现"></a>4.1 功能详细介绍及其实现</h2><ol>
+<li><p>页面布局</p>
+<ol>
+<li><p>将界面实现垂直排列</p>
+<ol>
+<li>界面布局中的orientation值设置成vertical:如下图所示</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/HBQpZSC9wFjf1aR.png" alt="image001.png"></p>
+</li>
+<li><p>背景图片</p>
+<ol>
+<li><p>首先将需要的图片素材拖入到drawable中</p>
+<ol>
+<li>如下图所示</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/GOo8Izpjw3eKDsi.png" alt="image002.png"></p>
+</li>
+<li><p>在Layout中选择背景图</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/EjUih3YQPLTHFG7.png" alt="image003.png"></p>
+</li>
+<li><p>分块显示内容</p>
+<ol>
+<li><p>文本框信息</p>
+<ol>
+<li><p>新建一个textView并且拖动到指定的位置</p>
+</li>
+<li><p>将要显示的文本框信息储存在values目录下的strings.xml文件中</p>
+<ol>
+<li>储存信息代码</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span>?&gt;</span><br><span class="line">&lt;resources&gt;</span><br><span class="line">&lt;string name="hello"&gt;同意条款&lt;/string&gt;</span><br><span class="line">&lt;string name="app_name"&gt;我同意游戏条款&lt;/string&gt;</span><br><span class="line">&lt;string name=<span class="string">"artcle"</span>&gt;</span><br><span class="line">&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;温馨提示:本游</span><br><span class="line">戏适合各年龄段的玩家，请您合理安排游戏时间，不要沉迷游戏!</span><br><span class="line">当您连续在线 <span class="number">2</span> 小时间后，系统将自动结束游戏。如果同意该条款请勾选“我</span><br><span class="line">同意”复选框，方可进入游戏。&lt;/string&gt;</span><br><span class="line">&lt;string name="action_settings"&gt;Settings&lt;/string&gt;</span><br><span class="line">&lt;/resources&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将textView显示文本框信息</p>
+</li>
+<li><p>Text 框中输入要显示的 name 名字，如下图所示</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/AVWrkmK9chsqiM6.png" alt="image004.png"></p>
+</li>
+<li><p>我同意</p>
+<ol>
+<li>使用CheckBox实现</li>
+<li>Text 内容为我同意</li>
+<li>选中的样式是对号的图片</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/LvHjPnN1mWpTizg.png" alt="image005.png"></p>
+</li>
+<li><p>进入按钮</p>
+<ol>
+<li>插入一张图实现</li>
+</ol>
+<p><img src="https://i.loli.net/2020/07/16/tzF3G2YLbSZiKfM.png" alt="image006.png"></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>功能实现</p>
+<ol>
+<li><p>检测勾选我同意的 checkbox 后弹出进入按钮</p>
+<ol>
+<li>监测button是否被选中，选中就弹出，未选中就隐藏。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">checkbox.setOnCheckedChangeListener(<span class="keyword">new</span></span><br><span class="line">OnCheckedChangeListener() &#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCheckedChanged</span><span class="params">(CompoundButton buttonView,</span></span></span><br><span class="line"><span class="function"><span class="params"><span class="keyword">boolean</span> isChecked)</span> </span>&#123;</span><br><span class="line"><span class="keyword">if</span>(isChecked)&#123;</span><br><span class="line">imageButton.setVisibility(View.VISIBLE);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">imageButton.setVisibility(View.INVISIBLE);</span><br><span class="line">&#125;</span><br><span class="line">imageButton.invalidate();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>进入后显示登录信息</p>
+<ol>
+<li>设置一个监听，点击后弹出信息，正在进入游戏。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">imageButton.setOnClickListener(<span class="keyword">new</span> OnClickListener() &#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">Toast.makeText(MainActivity.<span class="keyword">this</span>, <span class="string">"正在进入游戏。。。"</span>,</span><br><span class="line">Toast.LENGTH_SHORT).show();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码如下：</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cs.sdufe;</span><br><span class="line"><span class="keyword">import</span> cs.sdufe.R;</span><br><span class="line"><span class="keyword">import</span> android.app.Activity;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"><span class="keyword">import</span> android.view.View.OnClickListener;</span><br><span class="line"><span class="keyword">import</span> android.widget.CheckBox;</span><br><span class="line"><span class="keyword">import</span> android.widget.CompoundButton;</span><br><span class="line"><span class="keyword">import</span> android.widget.CompoundButton.OnCheckedChangeListener;</span><br><span class="line"><span class="keyword">import</span> android.widget.ImageButton;</span><br><span class="line"><span class="keyword">import</span> android.widget.Toast;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line"><span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">setContentView(R.layout.main);</span><br><span class="line"><span class="keyword">final</span> ImageButton</span><br><span class="line">imageButton=(ImageButton)findViewById(R.id.start);</span><br><span class="line">CheckBox</span><br><span class="line">checkbox=(CheckBox)findViewById(R.id.checkBox1);</span><br><span class="line">checkbox.setOnCheckedChangeListener(<span class="keyword">new</span></span><br><span class="line">OnCheckedChangeListener() &#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCheckedChanged</span><span class="params">(CompoundButton buttonView,</span></span></span><br><span class="line"><span class="function"><span class="params"><span class="keyword">boolean</span> isChecked)</span> </span>&#123;</span><br><span class="line"><span class="keyword">if</span>(isChecked)&#123;</span><br><span class="line">imageButton.setVisibility(View.VISIBLE);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">imageButton.setVisibility(View.INVISIBLE);</span><br><span class="line">&#125;</span><br><span class="line">imageButton.invalidate();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line">imageButton.setOnClickListener(<span class="keyword">new</span> OnClickListener() &#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</span><br><span class="line">Toast.makeText(MainActivity.<span class="keyword">this</span>, <span class="string">"正在进入游戏。。。"</span>,</span><br><span class="line">Toast.LENGTH_SHORT).show();</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示信息</p>
+<ol>
+<li>在点击登陆后进入游戏显示进入游戏</li>
+</ol>
+<img src="https://i.loli.net/2020/07/16/CB5PQcFDlYd9IzO.png" alt="image007.png" style="zoom:25%;" />
+
+</li>
+</ol>
+<h2 id="4-2-简要说明"><a href="#4-2-简要说明" class="headerlink" title="4.2 简要说明"></a>4.2 简要说明</h2><h1 id="第五章-运行显示"><a href="#第五章-运行显示" class="headerlink" title="第五章 运行显示"></a>第五章 运行显示</h1><ul>
+<li>初始界面显示</li>
+</ul>
+<img src="https://i.loli.net/2020/07/16/PkZmVOSgiH2J5pF.png" alt="image008.png" style="zoom: 25%;" />
+
+<ul>
+<li>选中我同意后显示</li>
+</ul>
+<img src="https://i.loli.net/2020/07/16/TQtPMVmYxqUIgR6.png" alt="image009.png" style="zoom: 25%;" />
+
+<ul>
+<li>点击 进入 之后显示出 进入游戏。。。</li>
+</ul>
+<img src="https://i.loli.net/2020/07/16/yaNUDOYLTtI1sSP.png" alt="image010.png" style="zoom: 25%;" />
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/20/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8PD%E5%AE%89%E8%A3%85Ubuntu%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%97%A0%E6%B3%95%E6%94%B9%E5%8F%98%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-03-20T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/20/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8PD%E5%AE%89%E8%A3%85Ubuntu%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%97%A0%E6%B3%95%E6%94%B9%E5%8F%98%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E9%97%AE%E9%A2%98/">Mac上使用PD安装Ubuntu Linux虚拟机无法改变分辨率的问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Android开发</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/20/%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%B0%8F%E5%AE%9E%E4%BE%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/Mac%20OS%E4%B8%8BKali%20Linux%E5%AE%89%E8%A3%85/" class="archive-article-date">
-  	<time datetime="2020-03-10T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/20/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8PD%E5%AE%89%E8%A3%85Ubuntu%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%97%A0%E6%B3%95%E6%94%B9%E5%8F%98%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mac上使用PD安装Ubuntu Linux虚拟机无法改变分辨率的问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/Mac%20OS%E4%B8%8BKali%20Linux%E5%AE%89%E8%A3%85/">Mac OS下Kali Linux安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Kali Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一章-绪论"><span class="toc-number">1.</span> <span class="toc-text">第一章 绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#摘要"><span class="toc-number">1.1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1研究背景与意义"><span class="toc-number">1.2.</span> <span class="toc-text">1.1研究背景与意义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-1-研究背景"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.1.1 研究背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-2-研究意义"><span class="toc-number">1.2.2.</span> <span class="toc-text">1.1.2 研究意义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-本文组织结构"><span class="toc-number">1.3.</span> <span class="toc-text">1.2 本文组织结构</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章-系统软硬件环境设计"><span class="toc-number">2.</span> <span class="toc-text">第二章 系统软硬件环境设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-可行性分析"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 可行性分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-项目开发硬件环境"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 项目开发硬件环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-项目开发软件环境"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 项目开发软件环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-1-Android-Studio"><span class="toc-number">2.3.1.</span> <span class="toc-text">2.3.1 Android Studio</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三章-软件项目需求分析"><span class="toc-number">3.</span> <span class="toc-text">第三章 软件项目需求分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-功能需求"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 功能需求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四章-功能设计与实现"><span class="toc-number">4.</span> <span class="toc-text">第四章 功能设计与实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-功能详细介绍及其实现"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 功能详细介绍及其实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-简要说明"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 简要说明</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五章-运行显示"><span class="toc-number">5.</span> <span class="toc-text">第五章 运行显示</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/09/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%96%B9%E9%9D%A2%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-03-09T14:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-09</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/09/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%96%B9%E9%9D%A2%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/">Latex数学公式入门</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Latex</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-03-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计算机组成原理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -355,8 +494,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
