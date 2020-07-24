@@ -390,6 +390,113 @@
 
 
   
+    <article id="post-联通光猫WO-27s（华为HG8321R）网关型HGU超级管理员账户密码破解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/05/24/%E8%81%94%E9%80%9A%E5%85%89%E7%8C%ABWO-27s%EF%BC%88%E5%8D%8E%E4%B8%BAHG8321R%EF%BC%89%E7%BD%91%E5%85%B3%E5%9E%8BHGU%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/">联通光猫WO-27s（华为HG8321R）网关型HGU超级管理员账户密码获取</a>
+    </h1>
+  
+
+        
+        <a href="/2020/05/24/%E8%81%94%E9%80%9A%E5%85%89%E7%8C%ABWO-27s%EF%BC%88%E5%8D%8E%E4%B8%BAHG8321R%EF%BC%89%E7%BD%91%E5%85%B3%E5%9E%8BHGU%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2020-05-24T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>准备工作：确保当前电脑和猫在同一网段下，如若不确定，可以直接将电脑连接到猫上（暂时不用路由器），进行相关操作。</p>
+</li>
+<li><p>下载相关工具</p>
+<p>链接: <a href="https://pan.baidu.com/s/1fxCp6EafpXRRbwAbKLp_Rg" target="_blank" rel="noopener">https://pan.baidu.com/s/1fxCp6EafpXRRbwAbKLp_Rg</a> 提取码: mvew</p>
+</li>
+<li><p>打开软件ONT组播版本配置工具2017版（一下简称ONT软件）</p>
+<ol>
+<li>在上方 选择 升级</li>
+<li>ONT版本包选择下载好的18.bin</li>
+</ol>
+</li>
+<li><p>将猫的光纤拔掉然后重启猫</p>
+</li>
+<li><p>然后再ONT软件中点击启动</p>
+</li>
+<li><p>直到当前成功数为1时点击停止（会在当前目录生成一个文件）</p>
+</li>
+<li><p>重启猫后插上光纤上网（注意先后顺序）</p>
+</li>
+<li><p>打开管理界面（默认的猫的管理界面为：<a href="http://192.168.1.1）使用猫背面的用户名密码登录（登陆成功之后可以到认证注册里将LOID记下来，这样折腾出错之后还可以自己抢救下。）" target="_blank" rel="noopener">http://192.168.1.1）使用猫背面的用户名密码登录（登陆成功之后可以到认证注册里将LOID记下来，这样折腾出错之后还可以自己抢救下。）</a></p>
+</li>
+<li><p>登陆成功后从安全中找到防火墙，将其禁用。</p>
+</li>
+<li><p>使用Telnet连接到猫（笔者使用PuTTY软件演示，下载链接：链接: <a href="https://pan.baidu.com/s/1TU1qilnRS3GJcG_mo49U7A" target="_blank" rel="noopener">https://pan.baidu.com/s/1TU1qilnRS3GJcG_mo49U7A</a> 提取码: e4rk）</p>
+</li>
+<li><p>Telnet连接后用户名为 root 密码为 admin</p>
+</li>
+<li><p>依次执行下面步骤</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">su</span><br><span class="line">shell</span><br><span class="line">cd /</span><br><span class="line">cd mnt/jffs2/</span><br><span class="line">cp hw_ctree.xml 1.xml.gz</span><br><span class="line">aescrypt2   1 1.xml.gz   2.xml</span><br><span class="line">gzip  -d  1.xml.gz</span><br><span class="line">grep admin 1.xml</span><br></pre></td></tr></table></figure>
+
+<p>可以看到UserName为超级管理员账户，Password为超级管理员账户密码，AdminWebIp为超级管理员登录界面地址。</p>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/05/24/%E8%81%94%E9%80%9A%E5%85%89%E7%8C%ABWO-27s%EF%BC%88%E5%8D%8E%E4%B8%BAHG8321R%EF%BC%89%E7%BD%91%E5%85%B3%E5%9E%8BHGU%E8%B6%85%E7%BA%A7%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E6%88%B7%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Mac上使用PD安装Ubuntu Linux虚拟机无法改变分辨率的问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -836,80 +943,6 @@
 
 
   
-    <article id="post-Linux入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/16/Linux%E5%85%A5%E9%97%A8/">Linux入门</a>
-    </h1>
-  
-
-        
-        <a href="/2020/02/16/Linux%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-02-16T11:52:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>掌握Linux相关知识，对程序员来说是十分重要的。</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/16/Linux%E5%85%A5%E9%97%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1012,10 +1045,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Latex</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hadoop大数据</a>
               </li>
              
@@ -1024,15 +1053,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">计算机组成原理</a>
+                <a href="javascript:void(0)" class="js-tag color1">Latex</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1041,6 +1074,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Android开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">计算机组成原理</a>
               </li>
             
             <div class="clearfix"></div>
