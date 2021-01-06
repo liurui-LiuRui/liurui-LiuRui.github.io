@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020/3 | Strive|LiuRui的Blog</title>
+  <title>CSS选择器 | Strive|LiuRui的Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="刘瑞的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Strive|LiuRui的Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="css是改变html前端页面文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS选择器">
+<meta property="og:url" content="http://yoursite.com/2020/12/10/CSS%E9%80%89%E6%8B%A9%E5%99%A8/index.html">
 <meta property="og:site_name" content="Strive|LiuRui的Blog">
-<meta property="og:description" content="刘瑞的博客">
+<meta property="og:description" content="css是改变html前端页面文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-12-10T06:30:00.000Z">
+<meta property="article:modified_time" content="2021-01-06T08:40:04.138Z">
 <meta property="article:author" content="Ray Liu">
+<meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Strive|LiuRui的Blog" type="application/atom+xml">
@@ -164,174 +167,301 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS选择器" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS选择器
+    </h1>
+  
+
+        
+        <a href="/2020/12/10/CSS%E9%80%89%E6%8B%A9%E5%99%A8/" class="archive-article-date">
+  	<time datetime="2020-12-10T06:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-10</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>css是改变html前端页面文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。</p>
+<a id="more"></a>
+
+<blockquote>
+<p>本文记录css选择器知识</p>
+</blockquote>
+<p>[TOC]</p>
+<h1 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h1><h3 id="1-基础选择器"><a href="#1-基础选择器" class="headerlink" title="1.基础选择器"></a>1.基础选择器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[基础选择器]--&gt;B[标签选择器]</span><br><span class="line">A[基础选择器]--&gt;C[id选择器]</span><br><span class="line">A[基础选择器]--&gt;D[class类选择器]</span><br><span class="line">A[基础选择器]--&gt;E[通配选择器]</span><br></pre></td></tr></table></figure>
+
+<p>“选择器”指明了{}中的“样式”的作用对象，也就是“样式”作用于网页中的哪些元素</p>
+<p>　　1.通用元素选择器 *: 所有的标签都变色</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*&#123;<span class="attribute">margin</span>:<span class="number">0</span>;<span class="attribute">padding</span>:<span class="number">0</span>;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　2.标签选择器：匹配所有使用p标签的样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:red&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　3.id选择器：匹配指定的标签</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#idididid</span>&#123;<span class="attribute">color</span>:red&#125;</span><br></pre></td></tr></table></figure>
+
+<p>　　4.class类选择器：谁指定class谁的变色，可选多个</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.c1</span>&#123;<span class="attribute">color</span>:red&#125; 或者 <span class="selector-tag">div</span><span class="selector-class">.c1</span>&#123;<span class="attribute">color</span>:red&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-组合选择器"><a href="#2-组合选择器" class="headerlink" title="2.组合选择器"></a>2.组合选择器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[组合选择器]--&gt;N[常用]--&gt;B[后代选择器]</span><br><span class="line">A[组合选择器]--&gt;N[常用]--&gt;C[子代选择器]</span><br><span class="line">A[组合选择器]--&gt;N[常用]--&gt;D[多元素选择器]</span><br><span class="line">A[组合选择器]--&gt;M[不常用]--&gt;E[毗邻选择器]</span><br><span class="line">A[组合选择器]--&gt;M[不常用]--&gt;F[兄弟选择器]</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>1.后代选择器 (不分层级，只让p标签变色)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.c2 p&#123;color:red&#125; //选择类c2后的所有p标签</span><br></pre></td></tr></table></figure>
+
+<p>2.子代选择器（只在儿子层找）</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.c2&gt;p&#123;color:red&#125; //在儿子层找</span><br><span class="line">//可以连用 例如</span><br><span class="line">.c2&gt;p1&gt;p2&#123;color:red&#125; //找的是c2类下的p1下的p2</span><br></pre></td></tr></table></figure>
+
+<p>3.多元素选择器：同时匹配所有指定的元素</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.c1,.c2,p&#123;color:red&#125; //选择c1类和c2类和p标签</span><br></pre></td></tr></table></figure>
+
+<p>不常用    　</p>
+<p>4.毗邻选择器（紧挨着，找相邻的,只找下面的，不找上面的）</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.c2</span>+<span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:red&#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.兄弟选择器：同一级别的，离得很近的</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.c2</span>~<span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:red&#125;</span><br></pre></td></tr></table></figure>
+
+<p>6.多元素选择器</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.c2</span> <span class="selector-class">.c3</span>,<span class="selector-class">.c2</span>~ <span class="selector-class">.c3</span>&#123; <span class="attribute">color</span>:red &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-属性选择器"><a href="#3-属性选择器" class="headerlink" title="3.属性选择器"></a>3.属性选择器</h3><ol>
+<li><p>E[att]    匹配所有具有att属性的E元素，不考虑它的值。（注意：E在此处可以省略。</p>
+<pre><code>比如“[cheacked]”。以下同。)</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span><span class="selector-attr">[title]</span> &#123; <span class="attribute">color</span>:<span class="number">#f00</span>; &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>E[att=val]       匹配所有att属性等于“val”的E元素</p>
+</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[class=”error”]</span> &#123; <span class="attribute">color</span>:<span class="number">#f00</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>E[att~=val]     匹配所有att属性具有多个空格分隔的值、其中一个值等于“val”的E元素</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">td</span><span class="selector-attr">[class~=”name”]</span> &#123; <span class="attribute">color</span>:<span class="number">#f00</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>E[attr^=val]    匹配属性值以指定值开头的每个元素</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[class^=<span class="string">"test"</span>]</span>&#123;<span class="attribute">background</span>:<span class="number">#ffff00</span>;&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>E[attr$=val]    匹配属性值以指定值结尾的每个元素</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[class$=<span class="string">"test"</span>]</span>&#123;<span class="attribute">background</span>:<span class="number">#ffff00</span>;&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>E[attr*=val]    匹配属性值中包含指定值的每个元素</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-attr">[class*=<span class="string">"test"</span>]</span>&#123;<span class="attribute">background</span>:<span class="number">#ffff00</span>;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-伪类"><a href="#4-伪类" class="headerlink" title="4.伪类"></a>4.伪类</h3><h4 id="1-anchor伪类"><a href="#1-anchor伪类" class="headerlink" title="1.anchor伪类"></a>1.anchor伪类</h4><ol>
+<li><p>a:link（没有接触过的链接）,用于定义了链接的常规状态。</p>
+</li>
+<li><p>a:hover（鼠标放在链接上的状态）,用于产生视觉效果。</p>
+</li>
+<li><p>a:visited（访问过的链接）,用于阅读文章，能清楚的判断已经访问过的链接</p>
+</li>
+<li><p>a:active（在链接上按下鼠标时的状态）,用于表现鼠标按下时的链接状态。</p>
+<p>伪类选择器 : 伪类指的是标签的不同状态:</p>
+<p>a ==&gt; 点过状态 没有点过的状态 鼠标悬浮状态 激活状态</p>
+</li>
+</ol>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span> &#123;<span class="attribute">color</span>: <span class="number">#FF0000</span>&#125; <span class="comment">/* 未访问的链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span> &#123;<span class="attribute">color</span>: <span class="number">#00FF00</span>&#125; <span class="comment">/* 已访问的链接 */</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;<span class="attribute">color</span>: <span class="number">#FF00FF</span>&#125; <span class="comment">/* 鼠标移动到链接上 */</span></span><br><span class="line">a:active &#123;color: #0000FF&#125; /* 选定的链接 */ 格式: 标签:伪类名称&#123; css代码; &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-before和after伪类"><a href="#2-before和after伪类" class="headerlink" title="2.before和after伪类"></a>2.before和after伪类</h4><p>它们基本功能是在 CSS 渲染中向元素的内容前面和后面插入内容。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> //:before    p:before       在每个&lt;p&gt;元素之前插入内容     </span><br><span class="line"> //:after     p:after        在每个&lt;p&gt;元素之后插入内容     </span><br><span class="line">例：<span class="selector-tag">p</span><span class="selector-pseudo">:before</span>&#123;<span class="attribute">content</span>:<span class="string">"hello"</span>;<span class="attribute">color</span>:red;<span class="attribute">display</span>: block;&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-first-child-伪类"><a href="#3-first-child-伪类" class="headerlink" title="3.:first-child 伪类"></a>3.:first-child 伪类</h4><p>可以使用 :first-child 伪类来选择父元素的第一个子元素。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//在下面的例子中，选择器匹配作为任何元素的第一个子元素的 &lt;p&gt; 元素：</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">color</span>:blue;</span><br><span class="line">&#125;</span><br><span class="line">//在下面的例子中，选择相匹配的所有&lt;p&gt;元素的第一个 &lt;i&gt; 元素：</span><br><span class="line"><span class="selector-tag">p</span> &gt; <span class="selector-tag">i</span><span class="selector-pseudo">:first-child</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">color</span>:blue;</span><br><span class="line">&#125;</span><br><span class="line">//在下面的例子中，选择器匹配所有作为元素的第一个子元素的 &lt;p&gt; 元素中的所有 &lt;i&gt; 元素：</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span> <span class="selector-tag">i</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">color</span>:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="css的优先级"><a href="#css的优先级" class="headerlink" title="css的优先级"></a>css的优先级</h1><p>所谓CSS优先级，即是指CSS样式在浏览器中被解析的先后顺序。</p>
+<p>样式表中的特殊性描述了不同规则的相对权重，它的基本规则是：</p>
+<ol>
+<li>内联样式表的权值最高        style=””－－－－－－－－－－－－1000；</li>
+<li>统计选择符中的ID属性个数。    #id －－－－－－－－－－－－－－100</li>
+<li>统计选择符中的CLASS属性个数。 .class －－－－－－－－－－－－－10</li>
+<li>统计选择符中的HTML标签名个数。 p －－－－－－－－－－－－－－1</li>
+</ol>
+<p>按这些规则将数字符串逐位相加，就得到最终的权重，然后在比较取舍时按照从左到右的顺序逐位比较。</p>
+<ol>
+<li>文内的样式优先级为1,0,0,0，所以始终高于外部定义。</li>
+<li>有!important声明的规则高于一切。</li>
+<li>如果!important声明冲突，则比较优先权。</li>
+<li>如果优先权一样，则按照在源码中出现的顺序决定，后来者居上。</li>
+<li>由继承而得到的样式没有specificity的计算，它低于一切其它规则(比如全局选择符*定义的规则)。</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/20/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8PD%E5%AE%89%E8%A3%85Ubuntu%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%97%A0%E6%B3%95%E6%94%B9%E5%8F%98%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2020-03-20T11:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/20/Mac%E4%B8%8A%E4%BD%BF%E7%94%A8PD%E5%AE%89%E8%A3%85Ubuntu%20Linux%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%97%A0%E6%B3%95%E6%94%B9%E5%8F%98%E5%88%86%E8%BE%A8%E7%8E%87%E7%9A%84%E9%97%AE%E9%A2%98/">Mac上使用PD安装Ubuntu Linux虚拟机无法改变分辨率的问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/12/10/CSS%E9%80%89%E6%8B%A9%E5%99%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/10/Mac%20OS%E4%B8%8BKali%20Linux%E5%AE%89%E8%A3%85/" class="archive-article-date">
-  	<time datetime="2020-03-10T02:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/11/27/Echarts%E6%B0%B4%E7%90%83%E5%9B%BE%E6%A0%B7%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Echarts水球图样式调整</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/10/Mac%20OS%E4%B8%8BKali%20Linux%E5%AE%89%E8%A3%85/">Mac OS下Kali Linux安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Kali Linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#css选择器"><span class="toc-number">1.</span> <span class="toc-text">css选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-基础选择器"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.基础选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-组合选择器"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.组合选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-属性选择器"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.属性选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-伪类"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.伪类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-anchor伪类"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">1.anchor伪类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-before和after伪类"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">2.before和after伪类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-first-child-伪类"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">3.:first-child 伪类</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css的优先级"><span class="toc-number">2.</span> <span class="toc-text">css的优先级</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/09/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%96%B9%E9%9D%A2%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/" class="archive-article-date">
-  	<time datetime="2020-03-09T14:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-09</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/09/Latex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%96%B9%E9%9D%A2%E7%AE%80%E5%8D%95%E5%85%A5%E9%97%A8/">Latex数学公式入门</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Latex</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/03/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" class="archive-article-date">
-  	<time datetime="2020-03-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">计算机组成原理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -355,8 +485,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
